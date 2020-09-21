@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>6F0D846A-4C74-4A5E-B97F-7BFD5C128D3A</title>
+    <defs>
+        <path d="M25,22 C25.5522847,22 26,22.4477153 26,23 C26,23.5522847 25.5522847,24 25,24 L7,24 C6.44771525,24 6,23.5522847 6,23 C6,22.4477153 6.44771525,22 7,22 L25,22 Z M25,15 C25.5522847,15 26,15.4477153 26,16 C26,16.5522847 25.5522847,17 25,17 L7,17 C6.44771525,17 6,16.5522847 6,16 C6,15.4477153 6.44771525,15 7,15 L25,15 Z M25,8 C25.5522847,8 26,8.44771525 26,9 C26,9.55228475 25.5522847,10 25,10 L7,10 C6.44771525,10 6,9.55228475 6,9 C6,8.44771525 6.44771525,8 7,8 L25,8 Z" id="path-1"></path>
+    </defs>
+    <g id="Páginas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.2_Nuestra-Historia_320" transform="translate(-273.000000, -19.000000)">
+            <g id="Group" transform="translate(273.000000, 19.000000)">
+                <g id="color/$secundary-copy-23" fill="#FFFFFF" fill-opacity="0" fill-rule="nonzero">
+                    <rect id="Rectangle" x="0" y="0" width="32" height="32" rx="4"></rect>
+                </g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#232323" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="🎨-color" mask="url(#mask-2)" fill="#019846" fill-rule="nonzero">
+                    <rect id="Rectangle" x="0" y="0" width="32" height="32" rx="16"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

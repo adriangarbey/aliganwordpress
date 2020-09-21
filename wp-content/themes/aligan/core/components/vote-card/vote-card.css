@@ -1,0 +1,54 @@
+.vote-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    max-width: 270px;
+    border-radius: 10px;
+}
+
+.vote-card > h6 {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.vote-card .vote-card-score {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vote-card .vote-card-score i {
+    margin: 0 5px;
+}
+
+.vote-card p {
+    color: #b6b6b6;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.71;
+    letter-spacing: normal;
+}
+
+.vote-card .icon:hover,
+.vote-card .icon.active {
+    transform: scale(1.1);
+    transition: 0.25s background-image ease-in-out;
+    /* filter: brightness(0%) saturate(100%) invert(80%) sepia(65%) saturate(2897%)
+        hue-rotate(1deg) brightness(107%) contrast(104%); */
+    background-image: url('../../assets/icons/star1.svg');
+}
+
+.vote-card .icon.clicked {
+    transform: scale(1.2);
+    transition: 0.25s transform ease-in-out;
+}
+
+@media (max-width: 576px) {
+    .vote-card {
+        max-width: 100%;
+    }
+}

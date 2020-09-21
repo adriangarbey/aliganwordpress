@@ -1,0 +1,191 @@
+
+
+@media (max-width: 576px) {
+    .news-container .news-item img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* .news-item .item-details p:first-child {
+        position: absolute;
+        top: 0;
+    } */
+}
+
+
+.products-card-small {
+    box-shadow: 0px 2px 30px #e9ecef;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: space-between;
+    line-height: 1.33;
+    margin: 2em;
+    padding: 1em;
+    min-width: 100px;
+    min-height: 300px;
+    width: 300px;
+}
+
+
+.jumbotron-text {
+    padding-left: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jumbotron-text p {
+    line-height: 2em;
+    font-size: 1.25em;
+}
+
+.jumbotron-text button {
+    background-color: #019946;
+    color: white;
+}
+
+/* HTML CSSResult
+EDIT ON
+:root {
+  --carousel-width: 40vw;
+  --carousel-height: calc(0.7 * var(--carousel-width));
+  --carousel-padding: 5px;
+} */
+
+@media (max-width: 479px) {
+    :root {
+        --carousel-width: 95vw;
+    }
+}
+
+.viewport {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* .viewport .slider-indicator {
+    color: #019946;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 2px #ebebeb;
+    font-size: 32px;
+    height: 40px;
+    width: 40px !important;
+    display: inline-flex;
+    float: left;
+    border-radius: 45%;
+    align-items: center;
+    justify-content: center
+} */
+
+.viewport .carousel-control:first-of-type {
+    position: absolute;
+    left: -20px;
+    top: 30%;
+}
+.viewport .carousel-control:last-of-type {
+    position: absolute;
+    right: -20px;
+    top: 30%;
+}
+
+.carousel-frame {
+    /* background: #fafafa; */
+    padding: 10px;
+    border-radius: 3px;
+    /* border: 1px solid #ddd; */
+    width: 100%;
+    height: 175px;
+}
+
+.carousel-frame > .carousel-custom {
+    width: 100%;
+    min-height: 175px;
+    height: 100%;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+}
+
+ul.scroll {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.scroll-item-outer {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-item {
+    width: calc(40vw / 3);
+    height: 100%;
+    margin: 0 2em;
+}
+
+.viewport img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 576px) {
+    .viewport .scroll-item {
+        width: calc(100vw - 120px);
+    }
+
+    .viewport .carousel-control:first-of-type {
+        bottom: -20px;
+        left: 30%;
+        position: absolute;
+        top: unset;
+    }
+
+    .viewport .carousel-control:last-of-type {
+        bottom: -20px;
+        right: 30%;
+        position: absolute;
+        top: unset;
+    }
+}
+
+@supports (scroll-snap-align: start) {
+    /* modern scroll snap points */
+    .scroll {
+        scroll-snap-type: x mandatory;
+    }
+    .scroll-item-outer {
+        scroll-snap-align: center;
+    }
+}
+
+@supports not (scroll-snap-align: start) {
+    /* old scroll snap points spec */
+    .scroll {
+        -webkit-scroll-snap-type: mandatory;
+        scroll-snap-type: mandatory;
+        -webkit-scroll-snap-destination: 0 50%;
+        scroll-snap-destination: 0 50%;
+        -webkit-scroll-snap-points-x: repeat(100%);
+        scroll-snap-points-x: repeat(100%);
+    }
+
+    .scroll-item-outer {
+        scroll-snap-coordinate: 0 0;
+    }
+}

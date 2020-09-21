@@ -1,0 +1,95 @@
+.login h1{
+    background-color: transparent;
+    padding: 10px 0 15px;
+    height: 55px;
+}
+
+.login h1 a{
+    background-image: url(../images/logo.jpg);
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    width: 266px;
+    height: 50px;
+}
+
+body{
+    background: #ffffff;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    width: 320px;
+    padding: 50px 0;
+    margin: auto;
+
+}
+
+.forgetmenot{
+    display: none;
+}
+
+.login form .input,
+.login form input[type="checkbox"],
+.login input[type="text"] {
+    border: 1px solid #7e7e7e;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    padding: 9px 12px;
+    background: transparent;
+}
+
+.wp-core-ui .button-primary{
+    border: none;
+    color: #fff;
+    background: #28a745;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    padding: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary:hover{
+    background: #28a745;
+    border: none;
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.login h1 a:hover{
+    color: #28a745;
+}
+
+
+.login #login_error, .login .message, .login .success {
+    border-left: 4px solid #28a745;
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+#loginform{
+    background: #fff;
+    color: #484848;
+    margin-top: 0;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+    border-radius: 5px;
+}
+
+.login .button.wp-hide-pw .dashicons{
+    visibility: hidden;
+}

@@ -1,0 +1,211 @@
+/*
+Theme Name: Aligan
+Theme URI: https://aligan.cu
+Author: Pyxel Solutions
+Author URI: https://pyxelsolutions.cu
+Description:  Tema responsive para el portal web de la Empresa Productora de Piensos Occidente.
+Version: 1.0
+Requires at least: 5.3.2
+Requires PHP: 7.2.10
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: aligan, alimento animal, piensos
+Text Domain: aligan
+*/
+
+.rmp-rating-widget__msg.js-rmp-msg,
+.rmp-heading.rmp-heading--subtitle,
+.rmp-heading.rmp-heading--title{
+    display: none;
+}
+
+.rmp-rating-widget__results__votes.js-rmp-vote-count{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h6.vote-card-header{
+    margin-bottom: 0;
+}
+
+.rmp-rating-widget__results.js-rmp-results{
+    font-size: 0.85em;
+    color: #6c757d !important
+}
+
+#menu-menu-principal-en,
+#menu-menu-principal-en-1,
+#menu-menu-principal,
+#menu-menu-principal-1{
+    text-transform: uppercase;
+}
+
+.social a .icon{
+    color: black;
+}
+
+.aligan-form .uploading-file .icon{
+    animation: color_change .5s infinite alternate;
+}
+
+@-webkit-keyframes color_change {
+    from { color: #b6b6b6; }
+    to { color: #019946; }
+}
+@-moz-keyframes color_change {
+    from { color: #b6b6b6; }
+    to { color: #019946; }
+}
+@-ms-keyframes color_change {
+    from { color: #b6b6b6; }
+    to { color: #019946; }
+}
+@-o-keyframes color_change {
+    from { color: #b6b6b6; }
+    to { color: #019946; }
+}
+@keyframes color_change {
+    from { color: #b6b6b6; }
+    to { color: #019946; }
+}
+
+.popup-message{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #ff5d5d;
+    max-width: 250px;
+    color: #fff;
+    font-weight: 300;
+    z-index: 666;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.popup-message a{
+    position: relative;
+    z-index: 668;
+    color: #000;
+    text-decoration: underline;
+}
+
+.popup-message.status{
+    background: #019946;
+    color: #fff;
+}
+
+.popup-message-inner{
+    position: relative;
+    padding: 15px;
+}
+
+.page-template-page-ueb .contact-container .icons-row a{
+    color: #000000;
+}
+
+.activeLanguage ul,
+.activeLanguage li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.activeLanguage li a{
+    text-transform: uppercase !important;
+    color: #212529;
+    text-decoration: none;
+}
+
+.activeLanguage li a:hover{
+    color: #28a745;
+}
+
+.home-visitenos-link:hover{
+    text-decoration: none;
+}
+
+.activeLanguage li.current-lang{
+    display: none;
+}
+
+.search-item{
+    margin-bottom: 2rem;
+}
+
+.search-item-title a{
+    color: #212529;
+    font-size: 1.3rem;
+}
+
+.search-more-link a{
+    font-size: .9rem;
+    color: #28a745;
+}
+
+.search-results .pagination h2{
+    display: none;
+}
+
+.search-results .pagination.navigation .current{
+    right: inherit;
+}
+
+.page-numbers{
+    margin-right: 10px;
+}
+
+.search-results .pagination.navigation a{
+    color: #28a745;
+}
+
+.content-post-content figure figcaption{
+    font-style: italic !important;
+    font-weight: 700 !important;
+    margin-top: 0.25rem !important;
+    font-size: 80%;
+    text-align: right;
+}
+
+.comment-form-cookies-consent{
+    display: none !important;
+}
+
+.comment  .reply{
+    display: none !important;
+}
+
+.comment-list .comment{
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.comment-permalink{
+    color: #212529;
+}
+
+.comment-list .comment .comment-intro{
+    font-size: 80%;
+}
+
+.comment-list .comment:nth-child(odd){
+    background: #f8f9fa;
+}
+
+.content-share a{
+    color: #000;
+}
+
+.content-share a:hover{
+    color: #28a745;
+}
+
+.news-container a{
+    color: #000;
+    text-decoration: none;
+}
+
+.news-container a:hover{
+    color: #28a745;
+}

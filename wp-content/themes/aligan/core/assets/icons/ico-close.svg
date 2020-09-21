@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <filter id="cnblvm0frb" width="284.4%" height="284.4%" x="-92.2%" y="-92.2%" filterUnits="objectBoundingBox">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.152753497 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path id="wq6q3qu2ea" d="M9.793 8.257L16 14.464l6.208-6.207c.36-.36.927-.388 1.32-.083l.094.083.122.122c.39.39.39 1.024 0 1.415L17.536 16l6.207 6.208c.39.39.39 1.024 0 1.415l-.122.122c-.36.36-.928.388-1.32.083l-.094-.083-6.208-6.208-6.206 6.208-.094.083c-.392.305-.96.277-1.32-.083l-.122-.122c-.39-.391-.39-1.024 0-1.415L14.463 16 8.257 9.794c-.39-.391-.39-1.024 0-1.415l.122-.122c.39-.39 1.024-.39 1.414 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="32" height="32" fill="#FFF" fill-rule="nonzero" rx="16"/>
+        <mask id="p5jyh6nb1c" fill="#fff">
+            <use xlink:href="#wq6q3qu2ea"/>
+        </mask>
+        <use fill="#232323" fill-rule="nonzero" xlink:href="#wq6q3qu2ea"/>
+        <g fill="#019846" fill-rule="nonzero" filter="url(#cnblvm0frb)" mask="url(#p5jyh6nb1c)">
+            <rect width="32" height="32" rx="16"/>
+        </g>
+    </g>
+</svg>

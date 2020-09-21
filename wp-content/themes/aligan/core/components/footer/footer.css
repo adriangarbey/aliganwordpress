@@ -1,0 +1,49 @@
+.navbar {
+    background-color: #fffefe;
+}
+
+.footer-logo img {
+    width: 121px;
+    height: 42px;
+}
+
+.footer-bottom {
+    height: 40px;
+    background-color: green;
+}
+
+.footer-bottom p {
+    color: #fffefe;
+    font-size: 10px;
+}
+
+/* footer .navbar .container {
+    border-top: 1px solid lightgray;
+} */
+
+footer .navbar-nav a {
+    color: black;
+    font-weight: 500;
+}
+
+.logo-container div:first-child {
+    width: 30px;
+    height: 60px;
+    /* border: 1px solid red; */
+    display: block;
+    border-radius: 0 8px 8px 0px;
+}
+
+.logo-container div:last-child {
+    flex-grow: 1;
+    border-radius: 8px 0 0 8px;
+    padding-right: 2em;
+}
+
+
+
+@media (max-width: 576px) {
+    .logo-container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,309 @@
+.orgchart {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.orgchart .hoverable-info {
+    position: relative;
+}
+
+.orgchart .hoverable-info .icon {
+    position: absolute;
+    top: -12px;
+    right: 9px;
+    border-radius: 50%;
+    display: block;
+    /* border: 1px solid white; */
+    /* background: white; */
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #019946;
+}
+
+.orgchart .hoverable-info .icon:hover,
+.org-cards-container .card .icon:hover {
+    background-color: #019946;
+    color: white;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.org-cards-container .card .icon-sidenav-close {
+    width: 31px;
+    height: 30px;
+    background-color: white;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #ebebeb;
+    position: absolute;
+    top: -16px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+.org-cards-container .card {
+    display: none;
+    visibility: hidden;
+    /* opacity: 0; */
+}
+
+.org-cards-container .card .card-header {
+    box-shadow: 0 25px 25px 0 rgba(118, 196, 125, 0.32);
+}
+
+.org-cards-container .card-body img {
+    width: 110px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.org-cards-container .card.visible {
+    display: block !important;
+    transition: 0.25s all ease-in-out;
+    position: absolute !important;
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    z-index: 1000;
+}
+
+/* using specific class names here, using nth-selectors are less extensible */
+.org-cards-container .card-info .name {
+    font-size: 18px;
+}
+.org-cards-container .card-info .position {
+    font-size: 16px;
+}
+
+.orgchart .node {
+    border-radius: 8px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    padding: 12px 15px;
+    max-width: 164px;
+    margin: 8px;
+    min-height: 78px;
+    position: relative;
+}
+
+.orgchart .director {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.orgchart .director .node {
+    background-color: #019946;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.orgchart::after {
+    content: "";
+    display: block;
+    height: calc(100% - 146px);
+    border-left: 1px solid #019946;
+    left: 50%;
+    top: 90px;
+    position: absolute;
+}
+
+.orgchart .directions-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.orgchart .top-directions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.orgchart .top-directions .node {
+    background-color: #afcb1f;
+    box-shadow: 0 25px 25px 0 rgba(118, 196, 125, 0.32);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.orgchart .top-directions .node:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 21px;
+    border-left: 1px solid #019946;
+    left: 50%;
+    top: -75px;
+    position: relative;
+}
+
+.orgchart .offices {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    justify-content: center;
+    width: 50%;
+}
+
+.orgchart .offices .node {
+    background-color: #ffcc01;
+    box-shadow: 0 25px 25px 0 rgba(254, 204, 0, 0.2);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.orgchart .offices .node:nth-child(even):before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 0px;
+    border-bottom: 2px solid #ffcc01;
+    left: -48px;
+    top: 28px;
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    .orgchart::after {
+        height: calc(100% - 140px);
+    }
+
+    .orgchart .directions-container hr {
+        display: none;
+    }
+
+    .orgchart .top-directions .node,
+    .orgchart .offices .node {
+        max-width: 40%;
+    }
+
+    .orgchart .top-directions .node:nth-child(odd)::after {
+        content: "";
+        display: block;
+        width: 200%;
+        height: 0px;
+        border-bottom: 1px solid #019946;
+        left: 0px;
+        top: 50%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .orgchart .offices .node:nth-child(odd)::after {
+        content: "";
+        display: block;
+        width: 200%;
+        height: 0px;
+        border-bottom: 2px solid #ffcc01;
+        left: 0;
+        top: 50%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .orgchart .top-directions .node:nth-child(even)::after {
+        content: "";
+        display: none;
+    }
+
+    .orgchart .offices .node:nth-child(even)::before {
+        content: "";
+        display: none;
+    }
+
+    .orgchart .offices {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .orgchart .directions-container hr {
+        display: block;
+        margin: 0 95px 0px 95px;
+        border-top: 1px solid #019946;
+    }
+
+    .orgchart .top-directions .node:after {
+        border-left: 1px solid #019946;
+        display: block;
+        content: "";
+        float: left;
+        height: 22px;
+        left: 50%;
+        position: relative;
+        top: -55px;
+        width: 0;
+    }
+
+    .orgchart .top-directions .node:nth-last-child(2):after {
+        content: "";
+        display: block;
+        width: 21px;
+        height: 0px;
+        border-bottom: 1px solid #019946;
+        left: 164px;
+        top: 34px;
+        position: absolute;
+    }
+
+    .orgchart .top-directions .node:nth-last-child(1):after {
+        content: "";
+        display: none;
+    }
+
+    .orgchart .offices {
+        width: 50%;
+    }
+}
